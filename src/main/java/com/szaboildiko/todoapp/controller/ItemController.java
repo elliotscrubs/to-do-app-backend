@@ -26,6 +26,11 @@ public class ItemController {
         return itemRepository.findAll();
     }
 
+    @GetMapping(path="/byCategoryId")
+    public @ResponseBody Iterable<Item> getByCategoryId(@RequestParam Integer categoryId) {
+        return itemRepository.findByCategoryId(categoryId);
+    }
+
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Integer> deleteItem(@PathVariable Integer id) {
 
