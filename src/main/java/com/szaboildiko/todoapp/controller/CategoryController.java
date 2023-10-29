@@ -1,6 +1,5 @@
 package com.szaboildiko.todoapp.controller;
 
-
 import com.szaboildiko.todoapp.persistence.Category;
 import com.szaboildiko.todoapp.persistence.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
